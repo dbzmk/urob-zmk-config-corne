@@ -1,7 +1,7 @@
 /* source keypos definitions */
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
-# define NAV 1
+#define NAV 1
 
 /* map Corne's extra keys */
 #define X_LT &kp RC(RG(Q))
