@@ -75,12 +75,12 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_R THUMBS)    // "    "   "   "
 
 
 // copy all macro
-ZMK_BEHAVIOR(copy_all, macro,
-    wait-ms = <5>;
-    tap-ms = <3>;   
-    bindings = <&kp LG(A)>, <&kp LG(C)>;
+#define HRC_ALL    &hml         LA(LGUI) LG(A)
+ZMK_BEHAVIOR(copy_all_td, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = HRC_ALL, <&kp LG(C)>;
 )
-MAKE_HRM(hml_copy_all, &kp, &copy_all, KEYS_R THUMBS)  // "    "   "   "
+MAKE_HRM(hml_copy_all, &kp, &copy_all_td, KEYS_R THUMBS)  // "    "   "   "
 
 /* Nav cluster */
 
