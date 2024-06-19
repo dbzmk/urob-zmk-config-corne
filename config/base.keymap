@@ -73,6 +73,15 @@ MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
 MAKE_HRM(hmr_lpar_lt, &kp, &lpar_lt, KEYS_R THUMBS)    // "    "   "   "
 MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_R THUMBS)    // "    "   "   "
 
+
+// copy all macro
+ZMK_BEHAVIOR(copy_all, macro,
+    wait-ms = <5>;
+    tap-ms = <3>;   
+    bindings = <&kp LG(A)>, <&kp LG(C)>;
+)
+MAKE_HRM(hml_copy_all, &kp, &copy_all, KEYS_R THUMBS)  // "    "   "   "
+
 /* Nav cluster */
 
 // long-tap action on hold, short-tap action on all interrupts

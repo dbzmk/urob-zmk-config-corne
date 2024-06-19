@@ -21,17 +21,11 @@
 #define HRC_LPAR   &hmr_lpar_lt RS(LGUI) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LGUI) 0
 
-// copy all macro
-ZMK_BEHAVIOR(copy_all, macro,
-    wait-ms = <5>;
-    tap-ms = <3>;   
-    bindings = <&kp LG(A)>, <&kp LG(C)>;
-)
+#define HRC_CP_ALL &hml_copy_all LA(LSHFT) 0
 
 /******** PERSONAL COMBOS ********/
 #define HRC_RET    &hml         LS(LGUI) RETURN
 #define HRC_BSPC   &hml         LA(LGUI) BSPC
-#define HRC_ALL    &hml         LA(LSHFT) copy_all
 #define HRC_DEL_LINE &hml       LA(LG(LSHFT)) RS(BSPC)
 
 ZMK_COMBO(bspc,  HRC_BSPC,   LM3 LM2,     DEF NAV NUM, COMBO_TERM_FAST)
@@ -42,7 +36,7 @@ ZMK_COMBO(equals, &kp EQUAL,    LT1 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(colon, &kp COLON,     LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(minus, &kp MINUS,     RT2 RT3,     DEF NAV NUM, COMBO_TERM_SLOW)
 
-ZMK_COMBO(select_all, HRC_ALL, LM1 LM3,    DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(copy_all, HRC_CP_ALL, LM1 LM3,    DEF NAV NUM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(delete_line, HRC_DEL_LINE, LM3 LM2 LM1, DEF NAV NUM, COMBO_TERM_SLOW)
 
