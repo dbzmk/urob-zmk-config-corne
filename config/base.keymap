@@ -75,10 +75,9 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_R THUMBS)    // "    "   "   "
 
 
 // copy all macro
-#define HRC_ALL    &hml         LA(LGUI) LG(A)
 ZMK_BEHAVIOR(copy_all_td, tap_dance,
     tapping-term-ms = <200>;
-    bindings = HRC_ALL, <&kp LG(C)>;
+    bindings = <&kp LG(A)>, <&kp LG(C)>;
 )
 MAKE_HRM(hml_copy_all, &kp, &copy_all_td, KEYS_R THUMBS)  // "    "   "   "
 
