@@ -12,6 +12,7 @@
 - ALT+⬆/⬇ arrow skip 5 macro
 + a lot of other little tweaks
 
+*NOTE*: the rest of this readme is copied from urobs original repo and does not apply to this fork. 
 # urob's zmk-config
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration.
