@@ -231,9 +231,27 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
+// copy all macro
+ZMK_BEHAVIOR(copy_all, macro,
+    wait-ms = <5>;
+    tap-ms = <3>;
+    bindings = <&kp LG(A)>, <&kp LG(C)>;
+)
+
 ZMK_BEHAVIOR(copy_all_td, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&kp LG(A)>, <&kp LG(C)>;
+    bindings = <&kp LG(C)>, <&copy_all>;
+)
+
+ZMK_BEHAVIOR(paste_all, macro,
+    wait-ms = <5>;
+    tap-ms = <3>;
+    bindings = <&kp LG(A)>, <&kp LG(P)>;
+)
+
+ZMK_BEHAVIOR(paste_all_td, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&kp LG(P)>, <&paste_all>;
 )
 
 ZMK_BEHAVIOR(nav_5_down, macro,
