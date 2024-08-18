@@ -225,13 +225,8 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     keep-mods = <MOD_RSFT>;
 )
 
-// tap: copy | double-tap: cut
-ZMK_BEHAVIOR(copy_cut, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&kp LC(INS)>, <&kp LC(X)>;
-)
 
-// copy all macro
+// copy all
 ZMK_BEHAVIOR(copy_all, macro,
     wait-ms = <5>;
     tap-ms = <3>;
@@ -239,20 +234,22 @@ ZMK_BEHAVIOR(copy_all, macro,
 )
 
 ZMK_BEHAVIOR(copy_all_td, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <300>;
     bindings = <&kp LG(C)>, <&copy_all>;
 )
 
+// paste all
 ZMK_BEHAVIOR(paste_all, macro,
     wait-ms = <5>;
     tap-ms = <3>;
-    bindings = <&kp LG(A)>, <&kp LG(P)>;
+    bindings = <&kp LG(A)>, <&kp LG(V)>;
 )
 
 ZMK_BEHAVIOR(paste_all_td, tap_dance,
     tapping-term-ms = <300>;
-    bindings = <&kp LG(P)>, <&paste_all>;
+    bindings = <&kp LG(V)>, <&paste_all>;
 )
+
 
 ZMK_BEHAVIOR(nav_5_down, macro,
     wait-ms = <5>;
