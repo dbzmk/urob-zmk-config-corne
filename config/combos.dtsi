@@ -21,7 +21,7 @@
 #define HRC_LPAR   &hmr_lpar_lt RS(LGUI) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LGUI) 0
 
-#define HRC_CP_ALL &hml_copy_all LA(LSHFT) 0
+// #define HRC_CP_ALL &hml_copy_all LA(LSHFT) 0
 
 /******** PERSONAL COMBOS ********/
 #define HRC_RET    &hml         LS(LGUI) RETURN
@@ -41,7 +41,7 @@ ZMK_COMBO(minus, &kp MINUS,     RT2 RT3,     DEF NAV NUM, COMBO_TERM_SLOW)
 // ZMK_COMBO(select_all, HRC_ALL,  LM1 LM3,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 // ZMK_COMBO(copy_all, HRC_CP_ALL, LM1 LM3,     DEF NAV NUM, COMBO_TERM_SLOW) // only working as select all right now
-ZMK_COMBO(copy_all, &copy_all_td, LB3 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(copy_all, &copy_all_td, LB3 LB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 
 ZMK_COMBO(delete_line, HRC_DEL_LINE, LM3 LM2 LM1, DEF NAV NUM, COMBO_TERM_SLOW)
