@@ -231,6 +231,11 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
+ZMK_BEHAVIOR(copy_all_td, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp LG(A)>, <&kp LG(C)>;
+)
+
 ZMK_BEHAVIOR(nav_5_down, macro,
     wait-ms = <5>;
     tap-ms = <3>;   
