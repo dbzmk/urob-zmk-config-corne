@@ -234,7 +234,7 @@ ZMK_BEHAVIOR(copy_all, macro,
 )
 
 ZMK_BEHAVIOR(copy_all_td, tap_dance,
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
     bindings = <&kp LG(C)>, <&copy_all>;
 )
 
@@ -246,7 +246,7 @@ ZMK_BEHAVIOR(paste_all, macro,
 )
 
 ZMK_BEHAVIOR(paste_all_td, tap_dance,
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
     bindings = <&kp LG(V)>, <&paste_all>;
 )
 
