@@ -371,9 +371,9 @@ ZMK_LAYER(sym,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     &kp LG(Q)     XXX           XXX           XXX           XXX             X_MT     &kp GRAVE     &kp AMPS      &kp PIPE      &kp TILDE     &kp BSLH        X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM &hml LCTRL F2 &hml LALT LG(W) &hml LGUI LG(T) &hml LSHFT LG(R) &kp LG(LS(T)) X_MM     ___        &hmr RSHFT HASH &hmr RGUI STAR &hmr RALT PLUS &hmr RCTRL EXCL X_RM
+    X_LM &hml LCTRL F2 &hml LALT LG(W) &hml LGUI LG(T) &hml LSHFT LG(R) &kp LG(LS(T)) X_MM     ___        &hmr RSHFT HASH &hmr RGUI AT &hmr RALT PLUS &hmr RCTRL STAR X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp RG(F)     &kp RG(S)     &kp RG(Z)     &kp RG(RS(Z)) &kp F3          X_MB     ___           &kp CARET     &kp PRCNT     &kp AT        &kp DLLR        X_RB
+    X_LB     &kp RG(F)     &kp RG(S)     &kp RG(Z)     &kp RG(RS(Z)) &kp F3          X_MB     ___           &kp CARET     &kp PRCNT     &kp DLLR      &kp EXCL        X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               ___           ___             X_MH     &kp RETURN    &kp BSPC                                                  X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
