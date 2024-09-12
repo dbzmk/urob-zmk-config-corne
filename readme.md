@@ -10,6 +10,8 @@
 - no vertical combos
 - right homerow arrows
 - ALT+⬆/⬇ arrow skip 5 macro
+- copy paste combos
+- left hand delete return combos
 + a lot of other little tweaks
 
 *NOTE*: the rest of this readme is copied from urobs original repo and does not apply to this fork. 
