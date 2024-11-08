@@ -6,12 +6,12 @@
 /* map Corne's extra keys */
 #define X_LT &kp RC(RG(Q))
 #define X_LM &kp LS(RETURN)
-#define X_LB &kp LG(LS(LA(R)))
+#define X_LB &kp (LG(D))
 #define X_LH &none
 
 #define X_RT &none
 #define X_RM &tog NAV
-#define X_RB &kp (LG(D))
+#define X_RB &kp LG(LS(LA(R)))
 #define X_RH &none
 
 /* activate bluetooth */
