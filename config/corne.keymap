@@ -11,7 +11,7 @@
 
 #define X_RT &none
 #define X_RM &tog NAV
-#define X_RB &none
+#define X_RB &kp (LG(D))
 #define X_RH &none
 
 /* activate bluetooth */
