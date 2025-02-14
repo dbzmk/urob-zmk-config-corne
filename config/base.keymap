@@ -292,6 +292,16 @@ ZMK_BEHAVIOR(nav_recent_tab, macro,
 #define BACK       &kp LG(LBKT)  // back
 #define FORWARD    &kp LG(RBKT)  // forward
 
+// Special Macros
+#define WHISPER    &kp LG(LC(LA(N1)))
+#define M_1        &kp LG(LC(LA(N2)))
+#define M_2        &kp LG(LC(LA(N3)))
+#define M_3        &kp LG(LC(LA(N4)))
+#define M_4        &kp LG(LC(LA(N5)))
+#define M_5        &kp LG(LC(LA(N6)))
+#define M_6        &kp LG(LC(LA(N7)))
+#define M_7        &kp LG(LC(LA(N8)))
+
 /* Keymap */
 
 
@@ -309,7 +319,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     ___           ___           &kp LS(TAB)   &window_swapper ___           X_MT     ___           ___           NAV_DEL       CANCEL        ___             X_RT
+    X_LT     ___           WHISPER       &kp LS(TAB)   &window_swapper ___           X_MT     ___           ___           NAV_DEL       CANCEL        ___             X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM  &hml LCTRL LG(LBKT) &hml LALT LG(RBKT) &hml LGUI F5 &hml LSHFT F6 &kp LG(D) X_MM    ___           &kp LEFT      &qnav_down    &qnav_up      &kp RIGHT       X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
@@ -366,10 +376,11 @@ ZMK_LAYER(uc,
     X_LH                                               ___           ___             X_MH     ___           ___                                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰───────────────────────────╯                                           ╰──────╯
 )
- 
+
+
 ZMK_LAYER(sym,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     &kp LG(Q)     XXX           XXX           XXX           &kp LG(LS(N4))  X_MT     &kp GRAVE     &kp AMPS      &kp PIPE      &kp TILDE     &kp BSLH        X_RT
+    X_LT     &kp LG(Q)     M_1           M_2           M_3           M_4             X_MT     &kp GRAVE     &kp AMPS      &kp PIPE      &kp TILDE     &kp BSLH        X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM &hml LCTRL F2 &hml LALT LG(W) &hml LGUI LG(T) &hml LSHFT LG(R) &kp LG(LS(T)) X_MM     ___        &hmr RSHFT HASH &hmr RGUI AT &hmr RALT PLUS &hmr RCTRL STAR X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
